@@ -100,14 +100,14 @@
   },
   "href": "https://api.spotify.com/v1/tracks/3D0MA3iSnhkVpt0P2o45vu",
 
-  // Song ID
+  // Track ID
   "id": "3D0MA3iSnhkVpt0P2o45vu",
   "is_local": false,
   "is_playable": true,
-  
+
   // Song Name
   "name": "Enemy",
-  // Popularity
+  // Track Popularity
   "popularity": 53,
 
   "preview_url": null,

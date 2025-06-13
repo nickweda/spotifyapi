@@ -1,0 +1,46 @@
+{
+  "external_urls": {
+    "spotify": "https://open.spotify.com/artist/1cJ5tVoeAEFcZBAwSZ0CtF"
+  },
+
+
+  "followers": {
+    "href": null,
+    // Follower Count
+    "total": 544731
+  },
+
+  // Genres
+  "genres": [
+    "metalcore"
+  ],
+  "href": "https://api.spotify.com/v1/artists/1cJ5tVoeAEFcZBAwSZ0CtF",
+  "id": "1cJ5tVoeAEFcZBAwSZ0CtF",
+
+  // Artist Profile Picture
+  "images": [
+    {
+      "url": "https://i.scdn.co/image/ab6761610000e5ebe37f236d6cb6e194c88660ab",
+      "height": 640,
+      "width": 640
+    },
+    {
+      "url": "https://i.scdn.co/image/ab67616100005174e37f236d6cb6e194c88660ab",
+      "height": 320,
+      "width": 320
+    },
+    {
+      "url": "https://i.scdn.co/image/ab6761610000f178e37f236d6cb6e194c88660ab",
+      "height": 160,
+      "width": 160
+    }
+  ],
+
+  // Artist Name
+  "name": "The Plot In You",
+
+  // Artist Popularity
+  "popularity": 66,
+  "type": "artist",
+  "uri": "spotify:artist:1cJ5tVoeAEFcZBAwSZ0CtF"
+}
