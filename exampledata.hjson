@@ -1,0 +1,118 @@
+// Data recieved when pulling a song
+{
+
+  // Entry for just the album details
+  "album": {
+    // Who owns the album?
+    "album_type": "album", // Album or EP?
+
+    // Nested Artist info - will be redundant/repeated in the artist entry below
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1cJ5tVoeAEFcZBAwSZ0CtF"
+        },
+        "href": "https://api.spotify.com/v1/artists/1cJ5tVoeAEFcZBAwSZ0CtF",
+        // Artist ID
+        "id": "1cJ5tVoeAEFcZBAwSZ0CtF",
+        "name": "The Plot In You",
+        "type": "artist",
+        "uri": "spotify:artist:1cJ5tVoeAEFcZBAwSZ0CtF"
+      }
+    ],
+
+    // Lots of Countries - Ommited
+    "available_markets": [], 
+    "external_urls": {
+      "spotify": "https://open.spotify.com/album/2GZSLSEMeDmKCNj25uQXAu"
+    },
+    "href": "https://api.spotify.com/v1/albums/2GZSLSEMeDmKCNj25uQXAu",
+
+    // Album ID
+    "id": "2GZSLSEMeDmKCNj25uQXAu",
+
+
+
+    // Album Covers
+    "images": [
+      {
+        "height": 640,
+        "width": 640,
+        "url": "https://i.scdn.co/image/ab67616d0000b27333f78f62422b8859e14489d0"
+      },
+      {
+        "height": 300,
+        "width": 300,
+        "url": "https://i.scdn.co/image/ab67616d00001e0233f78f62422b8859e14489d0"
+      },
+      {
+        "height": 64,
+        "width": 64,
+        "url": "https://i.scdn.co/image/ab67616d0000485133f78f62422b8859e14489d0"
+      }
+    ],
+
+    // Not blocked/greyed out
+    "is_playable": true,
+    // Name of Album
+    "name": "Swan Song",
+    // Release Date
+    "release_date": "2021-09-17",
+    "release_date_precision": "day",
+    // Num of Tracks
+    "total_tracks": 10,
+    "type": "album",
+    // Album ID
+    "uri": "spotify:album:2GZSLSEMeDmKCNj25uQXAu"
+  },
+
+
+
+  // Who are the Artists on the Song
+  "artists": [
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/1cJ5tVoeAEFcZBAwSZ0CtF"
+      },
+      "href": "https://api.spotify.com/v1/artists/1cJ5tVoeAEFcZBAwSZ0CtF",
+
+      // Artist ID
+      "id": "1cJ5tVoeAEFcZBAwSZ0CtF",
+      "name": "The Plot In You",
+      "type": "artist",
+      "uri": "spotify:artist:1cJ5tVoeAEFcZBAwSZ0CtF"
+    }
+  ],
+
+  "available_markets": [],
+  "disc_number": 1,
+  // Song Duration
+  "duration_ms": 220000,
+  // Explicit?
+  "explicit": true,
+
+  // International Standard Recording Code - Song Identity
+  "external_ids": {
+    "isrc": "US5262124156"
+  },
+  "external_urls": {
+    "spotify": "https://open.spotify.com/track/3D0MA3iSnhkVpt0P2o45vu"
+  },
+  "href": "https://api.spotify.com/v1/tracks/3D0MA3iSnhkVpt0P2o45vu",
+
+  // Song ID
+  "id": "3D0MA3iSnhkVpt0P2o45vu",
+  "is_local": false,
+  "is_playable": true,
+  
+  // Song Name
+  "name": "Enemy",
+  // Popularity
+  "popularity": 53,
+
+  "preview_url": null,
+  // Track number on album
+  "track_number": 8,
+  "type": "track",
+  "uri": "spotify:track:3D0MA3iSnhkVpt0P2o45vu"
+}
