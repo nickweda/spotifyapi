@@ -1,0 +1,30 @@
+Looker Studio Integrates better with BigQuery (Also from Google)
+
+Can add multiple tables without having to re-auth.
+Create Views in BigQuery then add in Looker Studio.
+
+Is this still not ideal? Can I do everything on the fly in Tableau?
+
+Steps:
+
+https://console.cloud.google.com/
+New project
+https://console.cloud.google.com/bigquery
+Create Dataset
+Upload CSV (automatically creates a SQL table)
+In looker studio link to BigQuery
+Add table into looker studio
+Run the query in BigQuery and it creates a table
+Repeat link to looker studio
+
+This works but still isn't "on the fly"
+
+Is Tableau what I'm looking for?
+
+"Looker Studio is not built for modeling - it expects clean, ready-to-go datasets."
+"Every “transformation” or join has to happen outside: in BigQuery, Supabase, or Sheets."
+"It works fine for dashboards, but it's not great for data discovery and iteration."
+
+"You can do analysis and visualization together, fast"
+
+Analysis vs. Visualization????? Two seperate things?
