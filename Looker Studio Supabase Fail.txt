@@ -1,0 +1,32 @@
+Looker Studio can connect to a Postgres server on the cloud.
+
+I setup a Supabase project and used the connector on Looker Studio.
+
+CSV Issues - Column names need to be lower case and underscored instead of spaced.
+
+Inside Looker Studio can run a custom query from my Postgres DB:
+
+SELECT 
+  artist_name,
+  MIN(top_artist_ranking) AS best_rank
+FROM public.spotify
+WHERE top_artist_ranking IS NOT NULL
+GROUP BY artist_name
+ORDER BY best_rank ASC
+
+Problem: Though this completely replaces the main table.
+
+On Supabase I can create a View:
+
+SELECT 
+  artist_name,
+  MIN(top_artist_ranking) AS best_rank
+FROM public.spotify
+WHERE top_artist_ranking IS NOT NULL
+GROUP BY artist_name
+ORDER BY best_rank ASC
+
+Problem: Though I would need to re-login to the server on Looker Studio to add other tables.
+This would be so much extra work for multiple custom tables to display on the Dashboard.
+
+Apparently, Tableau does this all built in.
