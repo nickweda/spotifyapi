@@ -1,4 +1,4 @@
-track_name,artist_name,album_name,track_duration,track_popularity,track_release_date,explicit,artist_genre,artist_popularity,artist_follower_count,top_artist_ranking,my_top_songs
+track_name,artist_name,album_name,track_duration,track_popularity,track_release_date,track_explicit,artist_genre,artist_popularity,artist_follower_count,artist_ranking,my_top_songs
 Sarcasm,Get Scared,Best Kind Of Mess,198,67,201001,1,"emo, metalcore, post-hardcore",58,764241,21,1
 Glass Heart,Caskets,Lost Souls,224,68,202108,0,"metalcore, post-hardcore",61,209521,14,1
 weapon,Against The Current,fever,197,59,202107,0,pop punk,64,532952,12,1
