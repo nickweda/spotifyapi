@@ -1,0 +1,19 @@
+track_name,artist_name,track_duration,track_popularity,track_release_date,track_explicit,artist_popularity,artist_follower_count,artist_ranking,artist_freq,genre_metalcore,genre_post-hardcore,genre_emo,genre_pop_punk,genre_screamo,genre_metal,genre_classical,genre_classical_piano,genre_alternative_metal,genre_rock,genre_chamber_music,genre_deathcore,genre_post-grunge,genre_rap_metal,genre_djent,genre_nu_metal,genre_punk,genre_rap,genre_christian_rock,genre_edm,genre_hard_rock,genre_progressive_metal,actual,predicted
+Numb,Linkin Park,187,91,200303,0,91,30373947,23,38,0,0,0,0,0,1,0,0,1,1,0,0,0,1,0,1,0,1,0,0,0,0,0,1
+A Trophy Fathers Trophy Son,Sleeping With Sirens,222,69,201105,0,68,2517462,5,59,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+The Reaper,Dark Divine,171,36,202309,1,49,58371,51,16,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Follow You,Bring Me The Horizon,231,71,201509,0,80,6451295,3,73,1,1,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Bring Me To Life,Evanescence,235,90,200303,0,78,5651192,30,56,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+If It Means A Lot To You,A Day To Remember,243,71,200902,0,72,2488997,27,43,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+Thick Skull,Paramore,232,56,202302,0,82,9474638,1,104,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+sTraNgeRs,Bring Me The Horizon,195,63,202207,1,80,6451295,3,73,1,1,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+All That I Can Give,The Plot In You,198,61,202405,0,66,545636,40,32,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+STITCH ME UP,Point North,212,53,202110,0,57,182043,56,15,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+Everybody's Fool,Evanescence,195,73,200303,0,78,5651192,30,56,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Even When I’m Not With You,Pierce The Veil,174,61,202302,0,77,3583033,4,50,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+LosT,Bring Me The Horizon,205,65,202305,1,80,6451295,3,73,1,1,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Monster - Transformers Soundtrack Version,Paramore,200,63,201106,0,82,9474638,1,104,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+Lithium,Evanescence,224,70,200601,0,78,5651192,30,56,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Stick Stickly,Attack Attack!,202,56,200811,0,52,274687,104,15,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Paralyzed,Against The Current,196,48,201502,0,64,532952,12,42,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+Wolf In Sheep's Clothing [REBORN],Set It Off,201,65,202411,1,66,1096575,152,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
