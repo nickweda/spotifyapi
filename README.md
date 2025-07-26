@@ -1,14 +1,14 @@
-# My Spotify Data - Analyzing and building a Machine Learning Model
+# Nick's Music Taste - Spotify Data Analysis and building a Machine Learning Model
 
-This Project is and end-to-end Data Science project, where I source my own personal Spotify song data using an API, and use the data to construct an Analytics Dashboard and build a Machine Learning Model which can predict if an unseen song will be among my top favorited songs.
+This Project is and ***end-to-end*** Data Science project, where I source my own personal Spotify song data using an API, and use the data to construct an Analytics Dashboard and build a Machine Learning Model which can predict if an unseen song will be among my top favorited songs.
 
 The motivation behind this project is to do a self-analysis and learn more about my music preferences, and find out how likely I will be to liking new music. 
 
-## Data Sourcing
+## Data Sourcing - Data Engineering
 - Spotify provides a [Web API](https://developer.spotify.com/documentation/web-api) to request all of your saved song Data
 - The [SpotiPy](https://github.com/spotipy-dev/spotipy) library provides a Python interface to this API 
 
-## Building a Dataset
+## Building a Dataset - Data Engineering
 
 ### Track (Song) Data
 
@@ -23,28 +23,21 @@ The motivation behind this project is to do a self-analysis and learn more about
 - To get further information about the other artists, we directly call the API for *each* other Artist not in the Top Arist list.
 
 ### Combined Features
-- track_name
-- track_duration
-- track_explicit
-- track_album
-- track_release_date
-- track_global_popularity
-- track_album_name
-- track_album_photo_url
-- **track_top_songs_ranking**
+- track_name, track_duration, track_explicit, track_album, track_release_date, track_global_popularity, track_album_name, track_album_photo_url, **track_top_songs_ranking**
+- artist_name, artist_genre, artist_global_popularity, artist_follower_count, artist_photo_url, artist_top_artist_ranking
 
-  
-- artist_name
-- artist_genre
-- artist_global_popularity
-- artist_follower_count
-- artist_photo_url
-- artist_top_artist_ranking
+The data was parsed from it's original JSON format, stored in a CSV, then imported into a SQLite database.
 
+## Data Analysis/Visualization with Tableau - Data Analysis
+Using Tableau, I visualized:
+- Top Songs
+- Top Artists
+- Top Genres
+
+[Tableau Dashboard](https://public.tableau.com/views/SpotifyAnalytics_17534101939520/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+![Dashboard](Dashboard.png)
 
 ## Data Wrangling with Pandas
-
-## Data Analysis/Visualization with Tableau
 
 ## Building an ML Model
 
