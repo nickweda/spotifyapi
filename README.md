@@ -26,7 +26,7 @@ The motivation behind this project is to do a self-analysis and learn more about
 - track_name, track_duration, track_explicit, track_album, track_release_date, track_global_popularity, track_album_name, track_album_photo_url, **track_top_songs_ranking**
 - artist_name, artist_genre, artist_global_popularity, artist_follower_count, artist_photo_url, artist_top_artist_ranking
 
-The data was parsed from it's original JSON format, stored in a CSV, then imported into a SQLite database.
+The data was parsed from it's original JSON format, stored in a CSV, then imported into a **SQLite** database.
 
 ## Data Analysis/Visualization with Tableau - Data Analysis
 Using Tableau, I visualized:
@@ -37,8 +37,8 @@ Using Tableau, I visualized:
 [Tableau Dashboard](https://public.tableau.com/views/SpotifyAnalytics_17534101939520/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 ![Dashboard](Dashboard.png)
 
-## Data Wrangling with Pandas
+## Data Wrangling with Pandas - Data Science
 
-## Building an ML Model
+## Building an ML Model - Data Science
 
-## Testing Predictions
+## Testing Predictions - Data Science / Software Engineering
