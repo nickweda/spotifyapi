@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nick's Favorite Song Predictor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h1 class="card-title text-center mb-4">Nick's Favorite Song Predictor</h1>
+                        <form method="post">
+                            <div class="mb-3">
+                                <label for="track_url" class="form-label">Spotify Track URL</label>
+                                <input type="url" name="track_url" id="track_url" class="form-control" placeholder="https://open.spotify.com/track/..." required>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-success">Predict Success</button>
+                            </div>
+                        </form>
+
+                        {% if prediction is not none %}
+                            <div class="alert mt-4 {{ 'alert-success' if prediction else 'alert-danger' }}" role="alert">
+                                <strong>Prediction:</strong> 
+                                {{ "Top Song" if prediction else "Not Top Song" }}
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
