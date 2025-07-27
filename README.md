@@ -46,6 +46,7 @@ Using Tableau, I visualized:
 
 ## Data Wrangling with Pandas - Data Science
 ![p](images/pandas.png)
+
 To lay the foundation for a Machine Learning model, the dataset must be modified to fit the numerical input that a Decision Tree model expects to see.
 
 ### Simple Modifications
@@ -96,9 +97,8 @@ This creates the following dataset containg the features:
 - This confusion is valid, I do like these songs and artists, but the element of subjectivity that the model can't capture is missing
 - On Analysis of False Negatives, a lot of these songs are newer songs from my favorite artists, or they are from new artists. I believe the release date and artist popularity features are suspect to this.
 - There are also some anomalies, such as John Mayer and Beethoven, as they don't fit my genre norm but I greatly appreciate
+![mayer](images/mayer.jpg)
 
 Note: The Spotify API used to provide additonal track information, which are features about the actual tonality of the track. Such as danceability, loudness, energy, etc. The inclusion of these features I believe would lead to a significantly higher accuracy and overall model quality/generalizability. 
-
-![mayer](images/mayer.jpg)
 
 ## Placing the Model in a System/Application for use - Machine Learning Engineering
