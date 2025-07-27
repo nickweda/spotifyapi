@@ -103,3 +103,13 @@ This creates the following dataset containg the features:
 Note: The Spotify API used to provide additonal track information, which are features about the actual tonality of the track. Such as danceability, loudness, energy, etc. The inclusion of these features I believe would lead to a significantly higher accuracy and overall model quality/generalizability. 
 
 ## Placing the Model in a Application - Machine Learning Engineering
+- After training the model, I rebuilt a mini-pipeline to take in a new spotify URL and query the API for the necessary data
+- The features the model expects can be split between general features (e.g. artist name) and "Nick specific" features
+- During the Data Wrangling phase, I CSV dumped the Artist Frequency and Top Artist Ranking for the Nick specific features, to be referenced for building new predictions off fresh data
+- All of this is packaged in a **Flask web application**, which provides a user interface to call the Model for a new prediction
+
+![bts](images/BTS.png) ![evan](images/evan.png)
+
+## Conclusion
+
+This project brings an idea about self-discovery through data into full actuality, encompassing all aspects of the Data Science workflow, from Data Engineering, Data Analysis, Data Science, and how a model is applied within a Software System with Machine Learning Engineering.
