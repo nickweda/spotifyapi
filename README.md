@@ -102,4 +102,4 @@ This creates the following dataset containg the features:
 
 Note: The Spotify API used to provide additonal track information, which are features about the actual tonality of the track. Such as danceability, loudness, energy, etc. The inclusion of these features I believe would lead to a significantly higher accuracy and overall model quality/generalizability. 
 
-## Placing the Model in a System/Application - Machine Learning Engineering
+## Placing the Model in a Application - Machine Learning Engineering
