@@ -52,11 +52,19 @@ To lay the foundation for a Machine Learning model, the dataset must be modified
 
 (Investigating the Semantic Meaning behind the Artist/Track name and it's relation to genre, therefore relation to preference is an interesting NLP research question)
 
-### Finding Top Genre's and One-Hot encoding them
+### Finding Top Genres and One-Hot encoding them
 - In total, there are **252 unique genres** in the dataset
 - However, intuition tells me that these are not uniformally distributed
-- 
+- I used matplotlib to map the frequency of genres
+- ![genres](genre_chart.png)
+- There is a clear elbow at genres that have 80 or more occurances, which cuts off the rest of the genres that appear to be close to uniformally distributed
+- There are 22 genres (8.7% of total genres) that dominate over the others
+- With these genres having such prominence, I suspect that they have a strong tie to the target variable, and should be preserved
+- Issue: Genre's are stored in a List, they need to be stored as a single numeric value
+- The best way to do this is to one-hot encode the top 22 genres (adds significant width (columns) to dataset, which lightgbm will be fit to handle)
 
+This creates the following dataset containg the features:
+- track_duration, track_popularity, track_release_date, track_explicit, artist_popularity, artist_follower_count, artist_ranking, artist_freq, genre_* (* - all 22 genres)
 
 ## Building an ML Model - Data Science
 
