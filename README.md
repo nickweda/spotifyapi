@@ -13,6 +13,8 @@ The motivation behind this project is to do a self-analysis and learn more about
 - The [SpotiPy](https://github.com/spotipy-dev/spotipy) library provides a Python interface to this API 
 
 ## Building a Dataset - Data Engineering
+![s](images/paramore.png)
+
 
 ### Track (Song) Data
 
@@ -43,6 +45,7 @@ Using Tableau, I visualized:
 ![Dashboard](images/Dashboard.png)
 
 ## Data Wrangling with Pandas - Data Science
+![p](images/pandas.png)
 To lay the foundation for a Machine Learning model, the dataset must be modified to fit the numerical input that a Decision Tree model expects to see.
 
 ### Simple Modifications
@@ -77,6 +80,8 @@ To lay the foundation for a Machine Learning model, the dataset must be modified
 This creates the following dataset containg the features:
 - track_duration, track_popularity, track_release_date, track_explicit, artist_popularity, artist_follower_count, artist_ranking, artist_freq, genre_* (* - all 22 genres)
 
+![data](images/data.png)
+
 ## Building an ML Model - Data Science
 ![Boosting](images/gradientboosting.png)
 - Test two different Ensemble Decision Tree Models, **XGBoost** and **Lightgbm**
@@ -93,5 +98,7 @@ This creates the following dataset containg the features:
 - There are also some anomalies, such as John Mayer and Beethoven, as they don't fit my genre norm but I greatly appreciate
 
 Note: The Spotify API used to provide additonal track information, which are features about the actual tonality of the track. Such as danceability, loudness, energy, etc. The inclusion of these features I believe would lead to a significantly higher accuracy and overall model quality/generalizability. 
+
+![mayer](images/mayer.jpg)
 
 ## Placing the Model in a System/Application for use - Machine Learning Engineering
