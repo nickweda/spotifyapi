@@ -63,9 +63,30 @@ To lay the foundation for a Machine Learning model, the dataset must be modified
 - Issue: Genre's are stored in a List, they need to be stored as a single numeric value
 - The best way to do this is to one-hot encode the top 22 genres (adds significant width (columns) to dataset, which lightgbm will be fit to handle)
 
+### Transforming the Target Variable
+- The Top Songs Ranking ranges from [1, 6,418]
+- The question I would like to answer is: **Given a new song, will it be in the top 10% of my Top Songs?**
+- This is easily interpretable, and can be modified to include a different range of favorites (e.g. 25%, 50%, etc.)
+- A regression would also work, however, a song being predicted to be my e.g. 4,212nd favorite song does not have a lot of meaning to me
+- I transformed the label to be binary, where 1 means it is in the top 10%, and 0 means it is not in the top 10%
+
 This creates the following dataset containg the features:
 - track_duration, track_popularity, track_release_date, track_explicit, artist_popularity, artist_follower_count, artist_ranking, artist_freq, genre_* (* - all 22 genres)
 
 ## Building an ML Model - Data Science
+- Test two different Ensemble Decision Tree Models, **XGBoost** and **Lightgbm**
+- I defined my train/test splits to be stratified, as the target variable transformation skews the data to be imbalanced
+- Between XGBoost and Lightgbm, they both score a high 92% and 93% accuracy respectively.
+- However, Lightgbm scores a higher **precision** score, with lower False Positive counts,
+- I believe this to be because Lightgbm handles higher dimensional (more columns) data better than XGBoost
+
+### Analyzing False Positives and Negatives
+- I sent the false positives and negatives from the model testing to respective CSV files
+- On analysis of False Positives, they are songs from my favorite artists that are popular, that I don't necessarily dislike, but aren't my favorite from them
+- This confusion is valid, I do like these songs and artists, but the element of subjectivity that the model can't capture is missing
+- On Analysis of False Negatives, a lot of these songs are newer songs from my favorite artists, or they are from new artists. I believe the release date and artist popularity features are suspect to this.
+- There are also some anomalies, such as John Mayer and Beethoven, as they don't fit my genre norm but  greatly appreciate
+
+Note: The Spotify API used to provide additonal track information, which are features about the actual tonality of the track. Such as danceability, loudness, energy, etc. The inclusion of these features I believe would lead to a significantly higher accuracy and overall model quality/generalizability. 
 
 ## Testing Predictions - Data Science / Software Engineering
