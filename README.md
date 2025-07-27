@@ -4,6 +4,10 @@ This Project is and ***end-to-end*** self inspired Data Science project, where I
 
 The motivation behind this project is to do a self-analysis and learn more about my music preferences, and find out how likely I will be to liking new music. 
 
+![Spotify](images/spotify.png)
+
+![Spotipy](images/spotipy.png)
+
 ## Data Sourcing - Data Engineering
 - Spotify provides a [Web API](https://developer.spotify.com/documentation/web-api) to request all of your saved song Data
 - The [SpotiPy](https://github.com/spotipy-dev/spotipy) library provides a Python interface to this API 
@@ -36,7 +40,7 @@ Using Tableau, I visualized:
 - Top Genres
 
 [Tableau Dashboard](https://public.tableau.com/views/SpotifyAnalytics_17534101939520/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-![Dashboard](Dashboard.png)
+![Dashboard](images/Dashboard.png)
 
 ## Data Wrangling with Pandas - Data Science
 To lay the foundation for a Machine Learning model, the dataset must be modified to fit the numerical input that a Decision Tree model expects to see.
@@ -56,7 +60,7 @@ To lay the foundation for a Machine Learning model, the dataset must be modified
 - In total, there are **252 unique genres** in the dataset
 - However, intuition tells me that these are not uniformally distributed
 - I used matplotlib to map the frequency of genres
-- ![genres](genre_chart.png)
+- ![genres](images/genre_chart.png)
 - There is a clear elbow at genres that have 80 or more occurances, which cuts off the rest of the genres that appear to be close to uniformally distributed
 - There are 22 genres (8.7% of total genres) that dominate over the others
 - With these genres having such prominence, I suspect that they have a strong tie to the target variable, and should be preserved
@@ -74,6 +78,7 @@ This creates the following dataset containg the features:
 - track_duration, track_popularity, track_release_date, track_explicit, artist_popularity, artist_follower_count, artist_ranking, artist_freq, genre_* (* - all 22 genres)
 
 ## Building an ML Model - Data Science
+![Boosting](images/gradientboosting.png)
 - Test two different Ensemble Decision Tree Models, **XGBoost** and **Lightgbm**
 - I defined my train/test splits to be stratified, as the target variable transformation skews the data to be imbalanced
 - Between XGBoost and Lightgbm, they both score a high 92% and 93% accuracy respectively.
