@@ -25,7 +25,7 @@
                         {% if prediction is not none %}
                             <div class="alert mt-4 {{ 'alert-success' if prediction else 'alert-danger' }}" role="alert">
                                 <strong>Prediction:</strong> 
-                                {{ "Top Song" if prediction else "Not Top Song" }}
+                                {{ "Top Song" if prediction else "Not a Top Song" }}
                             </div>
                         {% endif %}
 

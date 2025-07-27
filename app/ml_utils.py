@@ -77,11 +77,13 @@ def get_prediction(track_url):
 
     # Pass back some of the features to be rendered on HTML
     album_image_url = track_info['album']['images'][0]['url'] if track_info['album']['images'] else None
+    album_name = track_info['album']['name']
 
     features_display = {
         "Track Name": track_name,
         "Artist Name": artist_name,
-        "Genres": ", ".join(genre_list) if genre_list else "None",
+        "Album Name": album_name,
+        "Artist Genres": ", ".join(genre_list) if genre_list else "None",
         "album_image_url": album_image_url
     }
 
