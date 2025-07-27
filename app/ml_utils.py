@@ -75,6 +75,18 @@ def get_prediction(track_url):
     for g in genres:
         features[f"genre_{g.replace(' ', '_')}"] = int(g in genre_list)
 
+    # Pass back some of the features to be rendered on HTML
+    album_image_url = track_info['album']['images'][0]['url'] if track_info['album']['images'] else None
+
+    features_display = {
+        "Track Name": track_name,
+        "Artist Name": artist_name,
+        "Genres": ", ".join(genre_list) if genre_list else "None",
+        "album_image_url": album_image_url
+    }
+
+
     # Predict
     X = pd.DataFrame([features])
-    return int(model.predict(X)[0] >= 0.5) # probability
+    prediction = int(model.predict(X)[0] >= 0.5)
+    return prediction, features_display # probability

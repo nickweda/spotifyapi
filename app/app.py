@@ -9,12 +9,13 @@ app = Flask(__name__)
 @app.route("/", methods=["GET", "POST"])
 def index():
     prediction = None
+    features = None
     if request.method == "POST":
         # Get form input
         track_url = request.form.get("track_url")
 
-        # Generate prediction
-        prediction = get_prediction(track_url)
+        # Generate prediction - From ML Utils
+        prediction, features = get_prediction(track_url)
 
-    
-    return render_template("index.html", prediction=prediction)
+    # To HTML
+    return render_template("index.html", prediction=prediction, features=features)

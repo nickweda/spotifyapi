@@ -28,6 +28,28 @@
                                 {{ "Top Song" if prediction else "Not Top Song" }}
                             </div>
                         {% endif %}
+
+                        {% if features %}
+                            <div class="card mt-4">
+                                <div class="card-header">
+                                    <strong>Song Information</strong>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    {% for key, value in features.items() %}
+                                        {% if key != 'album_image_url' %}
+                                            <li class="list-group-item"><strong>{{ key.replace('_', ' ').title() }}:</strong> {{ value }}</li>
+                                        {% endif %}
+                                    {% endfor %}
+                                </ul>
+                                {% if features.album_image_url %}
+                                    <div class="text-center p-3">
+                                        <p><strong>Album Cover:</strong></p>
+                                        <img src="{{ features.album_image_url }}" alt="Album Cover" class="img-fluid rounded" style="max-height: 300px;">
+                                    </div>
+                                {% endif %}
+                            </div>
+                        {% endif %}
+
                     </div>
                 </div>
             </div>
