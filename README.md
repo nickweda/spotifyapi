@@ -85,8 +85,8 @@ This creates the following dataset containg the features:
 - On analysis of False Positives, they are songs from my favorite artists that are popular, that I don't necessarily dislike, but aren't my favorite from them
 - This confusion is valid, I do like these songs and artists, but the element of subjectivity that the model can't capture is missing
 - On Analysis of False Negatives, a lot of these songs are newer songs from my favorite artists, or they are from new artists. I believe the release date and artist popularity features are suspect to this.
-- There are also some anomalies, such as John Mayer and Beethoven, as they don't fit my genre norm but  greatly appreciate
+- There are also some anomalies, such as John Mayer and Beethoven, as they don't fit my genre norm but I greatly appreciate
 
 Note: The Spotify API used to provide additonal track information, which are features about the actual tonality of the track. Such as danceability, loudness, energy, etc. The inclusion of these features I believe would lead to a significantly higher accuracy and overall model quality/generalizability. 
 
-## Testing Predictions - Data Science / Software Engineering
+## Placing the Model in a System/Application for use - Machine Learning Engineering
