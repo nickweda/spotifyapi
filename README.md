@@ -116,4 +116,4 @@ This model is beter suited placed in the backend of a system, rather than a user
 
 Use Case: At Spotify, whenever a user is shown a new song through their own recommendation system, run a quick check on this model to see if we can predict if it's going to be a top song, it will mostly be rejections but on the off chance we get a hit, we can tune the recommender to increase how frequently the song gets played by the system. 
 
-This project brings an idea about self-discovery through data into full actuality, encompassing all aspects of the Data Science workflow, from Data Engineering, Data Analysis, Data Science, and how a model is applied within a Software System with Machine Learning Engineering.
+Overall, this project brings an idea about self-discovery through data into full actuality, encompassing all aspects of the Data Science workflow, from Data Engineering, Data Analysis, Data Science, and how a model is applied within a Software System with Machine Learning Engineering.
