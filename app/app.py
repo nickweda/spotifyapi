@@ -2,7 +2,12 @@
 # Run - flask run
 
 from flask import Flask, request, render_template
-from app.ml_utils import get_prediction
+
+# Deployment - root app structure
+try:
+    from app.ml_utils import get_prediction
+except:
+    from ml_utils import get_prediction
 
 app = Flask(__name__)
 
