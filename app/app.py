@@ -1,6 +1,11 @@
 # CLI - export FLASK_APP=app.app (once)
 # Run - flask run
 
+
+# Railway:
+# Root Directory: /app
+# Custom Start Command: gunicorn app.app:app
+
 from flask import Flask, request, render_template
 
 # Deployment - root app structure
