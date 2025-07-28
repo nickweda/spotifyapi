@@ -4,7 +4,7 @@
 
 # Railway:
 # Root Directory: /app
-# Custom Start Command: gunicorn app.app:app
+# Custom Start Command: gunicorn app:app
 
 from flask import Flask, request, render_template
 
