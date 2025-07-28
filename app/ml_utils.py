@@ -1,30 +1,3 @@
-# import pandas as pd
-# import os
-# import joblib
-
-# # Load Model
-# model_path = os.path.join(os.path.dirname(__file__), '..', 'lightgbm_model.pkl')
-# model = joblib.load(model_path)
-
-
-# # Directories
-# current_dir = os.path.dirname(os.path.abspath(__file__))
-# project_root = os.path.abspath(os.path.join(current_dir, ".."))
-# model_dir = os.path.join(current_dir, "model")
-
-# # Load Paths
-# ranking_path = os.path.join(model_dir, "nick_artist_ranking.csv")
-# freq_path = os.path.join(model_dir, "nick_artist_freq.csv")
-# genres_path = os.path.join(model_dir, "nick_artist_genres.txt")
-
-# # Load the CSVs
-# ranking = pd.read_csv(ranking_path, index_col=0).squeeze()
-# freq = pd.read_csv(freq_path, index_col=0).squeeze()
-
-# # Load the genre list
-# with open(genres_path, "r") as f:
-#     genres = [line.strip() for line in f.readlines()]
-
 import os
 import joblib
 import pandas as pd
