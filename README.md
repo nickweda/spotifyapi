@@ -8,6 +8,9 @@ The motivation behind this project is to do a self-analysis and learn more about
 
 ![Spotipy](images/spotipy.png)
 
+[Tableau Dashboard](https://public.tableau.com/views/SpotifyAnalytics_17534101939520/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[Live Website](https://spotifyapi-production.up.railway.app/)
+
 ## Data Sourcing - Data Engineering
 - Spotify provides a [Web API](https://developer.spotify.com/documentation/web-api) to request all of your saved song Data
 - The [SpotiPy](https://github.com/spotipy-dev/spotipy) library provides a Python interface to this API 
@@ -107,6 +110,8 @@ Note: The Spotify API used to provide additonal track information, which are fea
 - The features the model expects can be split between general features (e.g. artist name) and "Nick specific" features
 - During the Data Wrangling phase, I CSV dumped the Artist Frequency and Top Artist Ranking for the Nick specific features, to be referenced for building new predictions off fresh data
 - All of this is packaged in a **Flask web application**, which provides a user interface to call the Model for a new prediction
+
+[Live Website](https://spotifyapi-production.up.railway.app/)
 
 ![bts](images/BTS.png) ![evan](images/evan.png)
 
