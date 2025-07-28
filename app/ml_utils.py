@@ -55,8 +55,24 @@ def get_prediction(track_url):
     genre_list = artist['genres']
     
     # Format release date
+    # release_date_str = track_info['album']['release_date']
+    # release_date_obj = datetime.strptime(release_date_str, "%Y-%m-%d")
+    # track_release_date = int(release_date_obj.strftime("%Y%m"))
+
+    # Format release date with flexible parsing
     release_date_str = track_info['album']['release_date']
-    release_date_obj = datetime.strptime(release_date_str, "%Y-%m-%d")
+
+    # Try multiple date formats to parse release_date_str
+    for fmt in ("%Y-%m-%d", "%Y-%m", "%Y"):
+        try:
+            release_date_obj = datetime.strptime(release_date_str, fmt)
+            break
+        except ValueError:
+            continue
+    else:
+        raise ValueError(f"Unrecognized date format: {release_date_str}")
+
+    # Format to YYYYMM integer
     track_release_date = int(release_date_obj.strftime("%Y%m"))
 
     # Build feature dictionary
