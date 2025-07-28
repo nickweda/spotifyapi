@@ -1,5 +1,6 @@
 flask
 pandas
+scikit-learn
 lightgbm
 joblib
 gunicorn
