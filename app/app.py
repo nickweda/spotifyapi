@@ -2,9 +2,10 @@
 # Run - flask run
 
 
-# Railway:
+# Railway - 30 day free trial
 # Root Directory: /app
 # Custom Start Command: gunicorn app:app
+# Add env variables
 
 from flask import Flask, request, render_template
 
