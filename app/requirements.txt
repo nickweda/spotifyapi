@@ -1,5 +1,4 @@
 flask
 pandas
 joblib
-os
 gunicorn
