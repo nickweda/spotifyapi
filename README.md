@@ -9,6 +9,7 @@ The motivation behind this project is to do a self-analysis and learn more about
 ![Spotipy](images/spotipy.png)
 
 [Tableau Dashboard](https://public.tableau.com/views/SpotifyAnalytics_17534101939520/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
 [Live Website](https://spotifyapi-production.up.railway.app/)
 
 ## Data Sourcing - Data Engineering
